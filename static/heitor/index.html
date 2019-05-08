@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+
+    <header id="primeira_parte">
+      <h1><em><strong>CSS</strong></em></h1>
+      <ul>
+        <li><a href="#anatomia">anatomia</a></li>
+        <li><a href="#seletores">principais seletores</a></li>
+        <li><a href="#propriedade de texto">propriedade de texto</a></li>
+        <li><a href="#cores">cores</a></li>
+        <li><a href="#box model">box model</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <h2><strong>introdução</strong></h2>
+      <p>CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente utilizado com as linguagens de marcação HTML ou XHTML.</p>
+      <a href="#primeira_parte">voltar ao início</a>
+      <h2></h2>
+    </main>
+
+    <main id="anatomia">
+      <h2><strong>anatomia</strong></h2>
+      <h3>exemplo:</h3>
+      <ul>
+        <li>h2,h3{</li>
+        <li>...color: darkred;</li>
+        <li>...font-family: cursive;</li>
+        <li>...padding-left: 600px;</li>
+        <li>}</li>
+      </ul>
+      <p>h2,h3 = seletores(vão definir à quem a regra se aplica)</p>
+      <p>color,font-family,padding-left = é a declaração que contém  a propriedade, e os respectivos valores são darkred,cursive,600px</p>
+      <a href="#primeira_parte">voltar ao início</a>
+    </main>
+
+    <main id="seletores">
+      <h2><strong>principais seletores</strong></h2>
+      <table>
+        <caption>tabela de exemplos</caption>
+        <thead>
+          <th>formato</th>
+          <th>a que se refere</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>a</td>
+            <td>todos os hiperlinks</td>
+          </tr>
+          <tr>
+            <td>table > a </td>
+            <td>todos os hiperlinks filhos diretos de tabelas</td>
+          </tr>
+          <tr>
+            <td>table a</td>
+            <td>todos os hiperlinks descendentes de tabelas</td>
+          </tr>
+          <tr>
+            <td>.class</td>
+            <td>todos os itens com a classe 'class'</td>
+          </tr>
+          <tr>
+            <td>#id</td>
+            <td>todos os itens com o id 'id'</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Esses são os principais seletores, porém existem mais de 20 deles</p>
+      <a href="#primeira_parte">voltar ao início</a>
+    </main>
+    <main id="propriedades_de_texto">
+      <h2><strong>propriedades de texto</strong></h2>
+      <table>
+        <caption>tabela de exemplos</caption>
+        <thead>
+          <th>declaração em css</th>
+          <th>a que se refere</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>color</td>
+            <td>muda a cor dos textos</td>
+          </tr>
+          <tr>
+            <td>font</td>
+            <td>define o estilo, familia, peso,tamanho etc da fonte</td>
+          </tr>
+          <tr>
+            <td>text-decoration</td>
+            <td>muda a decoraçao to texto</td>
+          </tr>
+          <tr>
+            <td>word-spacing</td>
+            <td>muda o espaçamento entre as palavras</td>
+          </tr>
+          <tr>
+            <td>letter-spacing</td>
+            <td>muda o espaçamento entre as letras</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>existem muitos outros tipos de propriedades para identação e mudança no texto.</p>
+      <a href="#primeira_parte">voltar ao início</a>
+    </main>
+
+    <main id="cores">
+      <h2><strong>cores</strong></h2>
+      <p>as cores num documento html ou xhtml, podem ser referentes à muitas partes do documento, e podem ser em hexadecimal, nome,ou rgba</p>
+      <p>em hexadecimal, as cores são descritas segundo uma tabela,numerada em hexadecimal</p>
+      <p>por nome, simplesmente, a cor é definida segundo seu nome na tabela</p>
+      <p>em rgba, seu nome é definido por rgb(número da tabela)</p>
+      <p>pode-se também usar duas ou mais cores usando o background-image: linear gradient(para onde,cor1,cor2,...corN)</p>
+      <p>as cores podem definir as partes de um documento como:</p>
+      <ul>
+        <li>o fundo(background-color)</li>
+        <li>o texto(color)</li>
+        <li>a borda(border-color)</li>
+        <li>etc</li>
+      </ul>
+    </main>
+
+    <main>
+      <h2><strong>Box model</strong></h2>
+      <p>o box model é basicamente o tamanho daquilo presente no html que pode ser alterado com o css.</p>
+      <img src="img/box-model.png" alt="">
+    </main>
+  </body>
+</html>

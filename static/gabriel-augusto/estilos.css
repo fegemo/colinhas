@@ -1,0 +1,89 @@
+
+#logomarca {
+  width: 400px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Maiandra GD", bold;
+  color: #022445;
+  font-size: 50px;
+  font-weight: bold;
+  text-align:center;
+
+}
+
+
+
+a {
+  color: #1f025e;
+}
+
+body {
+  background-color: lightgray;
+  background-image: url(https://avante.biz/wp-content/uploads/Gray-Abstract-Wallpapers/Gray-Abstract-Wallpapers-009.jpg);
+  margin: 10%;
+}
+
+.nota {
+  opacity: 0.5;
+}
+
+.passo strong {
+  background-color: lightblue;
+  padding: 2px;
+
+}
+
+.passo em,.passo strong {
+  font-size: 25px;
+}
+
+p {
+  font-family: "Maiandra GD";
+  color: black;
+  font-size: 25pt;
+  text-align:center;
+
+}
+
+
+img.logovrau {
+  width: 300px;
+height: 300px;
+}
+
+.legendalogo {
+  font-style: italic;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.tags {
+  font-style: italic;
+  font-family: Uroob, bod;
+  color: black;
+  font-size: 20pt;
+  text-align:center;
+}
+img.listas {
+  height: 360px;
+}
+
+.paragrafoss {
+  text-align: left;
+}
+
+img.gab {
+  border-radius: 50%;
+height: 150px;
+}

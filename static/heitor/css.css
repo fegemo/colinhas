@@ -1,0 +1,75 @@
+header li{
+  display:inline-block;
+  padding:10px;
+  margin-left:120px;
+}
+#anatomia li:nth-child(odd),main tr:nth-child(odd){
+  background-color: lightgrey;
+}
+#anatomia li:nth-child(even),main tr:nth-child(even){
+  background-color: white;
+}
+#anatomia li:hover,main tr:hover{
+  background-color: lightblue;
+}
+#anatomia li{
+  display:block;
+  padding:0px;
+  margin-left:40%;
+  margin-right: 600px;
+  border:solid grey 1px;
+}
+main a,main p,#cores ul,img{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+p,main ul,main a{
+  font-size:20px;
+  font-family:monospace;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:orange;
+}
+h1{
+  color:orange;
+  margin:0px;
+  font-family: cursive;
+  padding-left: 600px;
+}
+h2,h3{
+  font-family: cursive;
+  color:darkred;
+  padding-left: 600px;
+}
+header {
+  background-color: red;
+  border:solid black 2px;
+}
+th, td{
+  border:1px solid grey;
+}
+main table{
+  border-collapse:collapse;
+  background-color:white;
+  margin-left: 40%;
+  margin-right: 20%;
+}
+caption{
+  border-collapse:collapse;
+  border:1px solid grey;
+  background-color:lightgrey;
+}
+body,html{
+  height:100%;
+  margin: 0;
+  background-color: Thistle;
+}
+img{
+   height:400px;
+   width:400px;
+}

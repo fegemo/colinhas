@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <link rel="icon" href="img/html5icon.ico">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>HTML</h1>
+      <h2>E suas propriedades</h2>
+    </header>
+
+    <aside>
+      <h2>Curiosidade!</h2>
+      <p>O HTML foi criado pelo físico Tim Berners-Lee em 1990. Tim também criou o protocolo http, um servidor web
+       e o primeiro navegador. Tudo isso porque ele percebeu a necessidade dos físicos de compartilhar informação
+        e a falta de máquinas ou formatos comuns.</p>
+    </aside>
+
+    <img src="img/html5.png" alt="" id="imagem-principal">
+    <p id="introducao" >HTML é uma linguagem usada para desenvolver websites e é encarregada do conteúdo
+       e da estrutura da página. A sigla HTML vem do inglês e significa Hypertext Markup
+        Language  ou, em português, Linguagem de Marcação de Hipertexto. Nessa página,
+         iremos explorar as tags, estruturas, atributos e outras propriedades do HTML.</p>
+
+    <section id="section1">
+      <div id="estrutura">
+        <h2>Estrutura de um arquivo HTML</h2>
+        <img src="img/estrutura-HTML.png" alt="">
+        <p>Um arquivo HTML é constituído de tags. A primeira é a tag <strong>html</strong>, que engloba todas as
+          outras tags (à exceção da tag especial <strong>!DOCTYPE</strong>). Dentro dela há duas outras tags,
+          a <strong>head</strong> e a <strong>body</strong>, nessa ordem. A tag <em>head</em> apresenta toda a meta-informação da página,
+          isto é, título da página no topo do navegador, codificação, ícone e inclusão de arquivos,
+          por exemplo. Já a tag <em>body</em> apresenta todo o conteúdo da página, como títulos, parágrafos, imagens, entre outros.</p>
+        </div>
+
+        <div id="anatomia">
+          <h2>Anatomia de uma tag</h2>
+          <img src="img/anatomia-tag.png" alt="">
+          <p>Uma tag html é composta pelos seguintes elementos:</p>
+          <ul>
+            <li>Tag de abertura: como próprio nome diz, abre a tag;</li>
+            <li>Conteúdo: encontra-se entre a tag de abertura e de fechamento, é o que será exibido na página;</li>
+            <li>Tag de fechamento: fecha a tag;</li>
+            <li>Atributo: presente na tag de abertura e atribui algo à tag.</li>
+          </ul>
+        </div>
+  </section>
+
+  <section id="tags">
+        <h2>Algumas tags HTML</h2>
+        <img src="img/exemplo-completo.png" alt="">
+        <div id="tres-primeiros">
+          <h3>Tag de título e subtítulos</h3>
+          <p>Há seis níveis de título, sendo que <strong>h1</strong> é o principal</p>
+          <ul>
+            <li>h1</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>h6</li>
+          </ul>
+          <h3>Tag de parágrafo</h3>
+          <p>Em uma tag <strong>p</strong> (parágrafo) as quebras de linha são feitas automaticamente, ou seja,
+            <strong>p</strong> é um elemento block.</p>
+            <h3>Tag de Imagem</h3>
+            <p>A tag de imagem, <strong>img</strong>, apresenta um atributo, o <em>src</em>, no qual se coloca a
+              URL da imagem, ou seja, o endereço da imagem. Diferente da maioria das tags, a de imagem só apresenta a
+              tag de abertura, não possuindo conteúdo ou tag de fechamento.</p>
+        </div>
+        <div id="tres-ultimos">
+          <h3>Tag de Hiperlink</h3>
+          <p>A tag de hiperlink, <strong>a</strong>, apresenta o atributo <em>href</em>, no qual se coloca o caminho do link,
+            seja ele interno ou externo. A tag de hiperlink apresenta conteúdo e tag de fechamento. </p>
+          <h3>Tag de Lista</h3>
+          <p>Listas podem ser numeradas, <strong>ol</strong>, ou não numeradas, <strong>ul</strong>. Em ambos os casos,
+            cada item da lista está dentro de uma tag <strong>li</strong>.</p>
+          <h3>Tags de Importâcia</h3>
+          <p>As tags de importâcia são usadas para dar destaque ao texto. São elas:</p>
+          <ul>
+            <li><strong>Strong</strong>: marca textos com alta importância;</li>
+            <li><em>Em</em>: dão ênfase ao texto;</li>
+            <li><del>Del</del>: marca textos que foram eliminados;</li>
+            <li><ins>Ins</ins>: marca um texto inserido.</li>
+            <li><mark>Mark</mark>: realça um texto que é considerado importante ao leitor.</li>
+          </ul>
+        </div>
+      </section>
+
+      <div id="disposicao">
+        <h2>Elementos Box e Inline</h2>
+        <p>O navegador tem diferentes formas de dispor os elementos. Há dois tipos principais de elementos, quando
+          se trata de disposição, elementos <em>box</em> e <em>inline.</em></p>
+        <p>Elementos box (ex.: <em>p, h1...h6, ul, ol, li</em>) são dispostos um abaixo do outro, tendo quebra de linha.
+          Já elementos inline (ex.: <em>img, a, strong, em, del</em>, etc) são dispostos a direita um do outro, na mesma linha.</p>
+      </div>
+
+      <div id="universo">
+        <h2>Atributos Universais</h2>
+        <img src="img/universo.jpg" alt="">
+        <p>Existem atributos universais, isto é, que podem ser usados em qualquer tag. Esses atributos são usados para identificar um
+          elemento ou um grupo de elementos. São esses <strong>id</strong> e <strong>class</strong>. O atributo <em>id</em> é usado para
+          identificar um só elemento, ou seja, não pode haver um mesmo id em uma página. Já o atributo <em>class</em> é usado para identificar
+          um mesmo grupo de elementos. Ambos são usados como seletores em um CSS.</p>
+      </div>
+
+      <section id="inclui">
+        <h2>Incluindo...</h2>
+        <div id="por-que">
+          <h4>Por que icluir o CSS ao invés de usar a tag <stron>style</strong>?</h4>
+          <p>Apesar de podermos estilizar nossa página web com a tag <em>style</em>, o mais recomendado é inserir o CSS. Assim, além de tornar nosso
+           código mais legível, ainda podemos reutilizar o CSS.</p>
+        </div>
+        <div id="parte1">
+          <h3><ins>arquivo CSS</ins></h3>
+          <p>Para incluir um arquivo CSS no HTML, você precisa colocar uma tag <strong>link</strong> no <em>head</em> do código. Desse modo:</p>
+          <img src="img/link.png" alt="">
+        </div>
+        <img src="img/piscadinha.jpg" id="piscadinha">
+        <div id="parte2">
+          <h3><ins>ícone</ins></h3>
+          <p>Para incluir um ícone, você também usará a tag <strong>link</strong> no <em>head</em> do código. Da seguinte forma:</p>
+          <img src="img/icon.png" alt="">
+        </div>
+      </section>
+
+    </body>
+  </html>

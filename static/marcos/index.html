@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="icone-programação.icon.png">
+    <title>Estrutura HTML</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+
+  <body>
+    <header>
+      <img src="gatinho" id="gatinho">
+      <h4>HTML</h4>
+      <h1>Coisas básicas sobre o <br> HTML</h1>
+      <p>A idéia deste maravilhoso site WEB é proporcionar mais conhecimento<br>
+         sobre essa maravilhosa linguagem a qual se denomina HTML. O site será<br>
+         dividido em artigos explicando conceitos básicos e princípios importantes<br>
+         para o melhor entendimento dessa linguagem.
+      </p>
+    </header>
+
+
+    <main>
+      <section id="Principio">
+      <h1>Mas aliás, o que é HTML?</h1>
+
+      <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web.
+         Documentos HTML podem ser interpretados por navegadores.
+         A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+         HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.
+         Um documento é visto como um conjunto de eventos concorrentes dependentes de tempo (como áudio, vídeo, etc.),conectados por hiperligações.
+         O padrão é independente de outros padrões de processamento de texto em geral.
+         SGML é um padrão de formatação de textos.Não foi desenvolvido para hipertexto,
+         mas tornou-se conveniente para transformar documentos em hiper-objetos
+         e para descrever as ligações.
+         <img src="xazam" id="xazam">
+      </p>
+      <nav>
+        <table>
+          <tr>
+            <th>Índice</th>
+          </tr>
+          <tr>
+            <td><li><a href="#estrutura" target= "_self">Estrutura básica do HTML</a></li></td>
+          </tr>
+          <tr>
+            <td><li><a href="#anatomia" target= "_self">Anatomia de uma TAG</a></li></td>
+          </tr>
+          <tr>
+            <td><li><a href="#universais" target= "_self">Os atributos universais</a></li></td>
+          </tr>
+          <tr>
+            <td><li><a href="#icone" target= "_self">Como colocar um ícone (favicon)</a></li></td>
+          </tr>
+          <tr>
+            <td><li><a href="#arquivo" target= "_self">Como incluir um arquivo CSS</a></li></td>
+          </tr>
+          <tr>
+            <td><li> <a href="#oi">Principais tags de conteúdo e seus atributos</a></li></td>
+          </tr>
+        </table>
+      </nav>
+      </section>
+
+
+    <section id="EstBasic">
+      <h1 id="estrutura">Estrutura básica do HTML</h1>
+      <p>A estrutura básica do HTML são as <span class="marcadores">tags</span> <em>html, head</em> e <em>body.</em>
+        <ul>
+          <li>As tags fazem a marcação da estrutura do texto</li>
+          <li>Existem dezenas de tags e cada uma tem um propósito e um resultado visual</li>
+          <li>A grande maioria delas precisam ser fechadas</li>
+        </ul>
+      </p>
+
+      <h2>A tag html</h2>
+      <p>Envolve todas as outras tags
+        Exceto a tag especial !DOCTYPE.
+        Dentro dela, deve existir as tags: <em>head</em> e <em>body</em>
+
+      <h2>A tag head</h2>
+          <ul>
+            <li>Do inglês: cabeça</li>
+            <li>Contém <span class="marcadores">meta-informação</span> sobre este arquivo html, por exemplo:</li>
+            <ul>
+              <li>Título da página no topo do navegador (obrigatório)</li>
+              <li>Codificação (encoding) da página</li>
+              <li>Ícone</li>
+              <li>Inclusão de arquivos (.css, .js)</li>
+            </ul>
+            <img src="codigo1.png" class="codigo">
+          </ul>
+
+      <h2>A tag body</h2>
+      <ul>
+        <li>Do inglês: corpo</li>
+        <li>Contém todo o conteúdo da página: tags de</li>
+          <ul>
+            <li>parágrafos</li>
+            <li>títulos e subtítulos</li>
+            <li>imagens, etc.</li>
+          </ul>
+          <img src="codigo2.png" class="codigo">
+      </ul>
+    </section>
+
+    <section id="AnatomTag">
+      <h1 id="anatomia">Anatomia de uma TAG</h1>
+      <img src="anatomia-tag.png" class="codigo">
+      <p>Tags de abertura podem ter <span class="marcadores">atributos</span></p>
+      <ul>
+        <li>Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada.</li>
+        <ul>
+          <li>Se pensarmos na tag img, o seu atributo será src.</li>
+        </ul>
+      </ul>
+    </section>
+
+    <section id="AtUniv">
+      <h1 id="universais">Os atributos universais</h1>
+      <p><span class="marcadores"><em>Atributos Universais</em></span> são aqueles que qualquer elemento pode ter.<br>
+          Esses atributos servem, por exemplo:
+          <ul>
+            <li>Selecionar apenas alguns parágrafos em vez de todos</li>
+            <li>Selecionar apenas o primeiro título h2 da página</li>
+            <li>Selecionar apenas uma imagem em especial</li>
+          </ul>
+          Podemos fazer isso através dos seletores <strong><em>id</em></strong> e <strong><em>class</em></strong>
+      </p>
+
+      <h2>Seletor id</h2>
+      <p>Este seletor seleciona apenas um elemento em específico, como por exemplo apenas um título.</p>
+      <pre>
+          <code>
+  <span class="seletor">#resumo</span> {
+  <span class="propriedade">color</span>: blue;
+  }
+          </code>
+      </pre>
+
+      <h2>Seletor class</h2>
+      <p>Este seletor, ao contrário do primeiro, seleciona elementos cujos possuem a mesma classe. Simplificando, selecionará mais de um elemento.</p>
+      <p>E, em um arquivo CSS, podemos escrever o nome da tag, seguido por um ponto ".", seguido pelo nome da classe:</p>
+      <pre>
+          <code>
+  <span class="seletor">#p.destacado</span> {
+  <span class="propriedade">font-weight</span>: bold;
+  }
+          </code>
+      </pre>
+      <p>Ou, se quisermos usar a classe destacado para outros elementos além de o, podemos omitir o nome da tag:</p>
+      <pre>
+        <code>
+  <span class="seletor">.destacado</span>{
+  <span class="propriedade">font-weight</span>: bold;
+  }
+        </code>
+      </pre>
+
+  </section>
+
+  <section id="Icon">
+    <h1 id="icone">Como colocar um ícone (favicon)</h1>
+    <p>Salve uma imagem no formato .ico e, na página HTML, dentro do head, coloque, por exemplo:</p>
+    <img src="../icone.png"><br><br>
+    <img src="https://github.com/fegemo/cefet-front-end-piranha-plant/raw/master/docs/favicon.png">
+  </section>
+
+  <section id="ArqCSS">
+    <h1 id="arquivo">Como incluir um arquivo CSS</h1>
+    <p>Para incluir um arquivo CSS ao HTML ao invés de se usar a tag style, basta criar um arquivo no formato .css e linkar o HTML a esse arquivo CSS.</p>
+    <ul><li>Um arquivo HTML podoe referenciar um CSS assim:</li>
+    <img src="13.png">
+    <ul>
+      <li>Mais de um arquivo HTML pode usar esse CSS</li>
+      <ul>
+        <li><span class="marcadores">Reaproveitamento</span> de código CSS</li>
+      </ul>
+      <li><span class="marcadores">Caching</span> do arquivo CSS: o arquivo é baixado apenas uma vez e usado sempre que necessário</li>
+      <ul>
+        <li>Útil se o site tem várias páginas</li>
+      </ul>
+    </ul>
+    </ul>
+  </section>
+
+  <section id="TagCont">
+  <div>
+    <h1 id="oi">Principais tags de conteúdo e seus atributos</h1>
+    <p>Tags de abertura podem ter <span class="marcadores">atributos:</span>
+       <ul>
+         <span class="marcadores">Não deve haver espaço</span> entre seu nome e seu valor:<br><br>
+         <img src="Sem título.png">
+       </ul>
+    </p>
+  </div>
+
+    <article id="Paragrafo" class="produtos">
+      <h2>Tag de <span class="marcadores">Parágrafo</span></h2>
+      <p><span class="marcadores">Quebras de linha</span> são feitas automaticamente</p>
+      <img src="100.png" class="alteracao">
+    </article>
+
+    <article id="Títulos" class="produtos">
+      <h2>Tag de <span class="marcadores">Títulos</span> e <span class="marcadores">Subtítulos</span></h2>
+      <p><span class="marcadores">Há a possibilidade de ter 6 níveis de títulos</span>. Mas a quantidade de títulos é infinita…</p>
+      <img src="102.png">
+      <img src="103.png">
+    </article>
+
+    <article id="Aimage" class="produtos">
+      <h2>Tag de <span class="marcadores">Imagem</span></h2>
+        <p>Para exibir imagens…</p>
+        <img src="104.png">
+        <p>Neste exemplo, usamos <span class="marcadores">a URL de uma imagem hospedada em outro site</span> na Internet</p>
+        <p>O atributo <span class="AtrEsp">src="..."</span> (abreviação de source) é usado para definir o endereço (URL) da imagem</p>
+
+    </article>
+
+    <article class="produtos" id="Hyperlink">
+      <h2>Tag de <span class="marcadores"><em>Hyperlink</em></span></h2>
+      <p>Link externo (para fora da página):</p>
+      <img src="105.png">
+      <p>Link interno (para algo hospedado no próprio computador)</p>
+      <img src="106.png">
+      <p>O atributo <span class="AtrEsp">href="..."</span> é usado para definir o endereço do link (URL).</p>
+      <p>A tag de hiperlink possui um atributo <span class="AtrEsp">target="..."</span> que pode ter os seguintes valores:</p>
+      <p><span class="AtrEsp">_self</span> O recurso “linkado” abre na própria aba (valor padrão).</p>
+      <p><span class="AtrEsp">_blank</span> O recurso “linkado” abre em uma nova aba.</p>
+
+    </article>
+
+    <article class="produtos" id="importancia">
+      <h2>Tags de <span class="marcadores">Importância</span></h2>
+      <table>
+        <thead>
+        <tr>
+          <th>< strong > < /strong ></th>
+          <th><em>< em > < /em ></em></th>
+          <th><del>< del > < /del ></del> e <ins>< ins > < /ins ></ins></th>
+          <th><mark>< mark >  < /mark ></mark></th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Usada para marcar texto com alta importância, seriedade ou urgência.Por padrão são desenhados em <strong>negrito</strong>.</td>
+            <td>Usada para dar ênfase (tipo “acentuar”) ao texto.Por padrão são desenhados em <em>itálico</em>.</td>
+            <td>Usadas para indicar texto que foi <del>removido</del>(< del >) ou <ins>inserido</ins>(< ins >)</td>
+            <td>Usada para realçar parte do texto considerada importante para o leitor. Tipo quando usandos caneta marcadora de texto.Por padrão, <mark>possuem o fundo com a cor amarela</mark></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </article>
+
+
+  </section>
+
+    </main>
+  </body>
+
+</html>

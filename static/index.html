@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colinhas HTML e CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy|Overlock">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/favicon.gif">
+  </head>
+  <body>
+    <header id="page-header">
+      <h1>Colinhas <span class="coracao pulsando">❤️</span></h1>
+      <div class="identificacao">
+        <div class="logado" hidden>
+          Logado como <span class="nome"></span>
+          <button type="button" class="logout waves-effect waves-light btn btn-small deep-purple lighten-2">Sair</button>
+        </div>
+        <div class="nao-logado">
+          <a href="#modal-login" class="waves-effect waves-light btn btn-small modal-trigger deep-purple lighten-2">Login</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="colinhas-html">
+        <h2>Sobre HTML</h2>
+        <div class="lista-colinhas">
+      </section>
+      <section class="colinhas-css">
+        <h2 class="title">Sobre CSS</h2>
+        <div class="lista-colinhas">
+        </div>
+      </section>
+    </main>
+    <footer id="rodape-pagina">
+      <p>
+        Feito pelos alunos de Redes de Computadores - 1º ano em 2019,
+        do CEFET-MG (campus II, Belo Horizonte)
+      </p>
+    </footer>
+
+    <!-- início do modal -->
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <h2>Identifique-se</h2>
+        <p>
+          Coloque seu <em>primeiro nome</em> <strong>em minúsculas, sem acentuação</strong>
+          como usuário.
+        </p>
+        <p>E o seu <em>número de matrícula</em> como senha.</p>
+        <form name="login" action="/api/login" method="post">
+          <div class="lado-a-lado">
+            <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="usuario" name="username" type="text">
+              <label for="usuario">Primeiro nome</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">security</i>
+              <input id="senha" name="password" type="password">
+              <label for="senha">Matrícula</label>
+            </div>
+          </div>
+          <footer class="rodape-modal">
+            <button type="button" class="waves-effect waves-light waves-deep-purple btn btn-flat modal-close">Voltar</button>
+            <button type="submit" class="waves-effect waves-light btn deep-purple lighten-2">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- fim do modal de login -->
+
+    <!-- início de um article.colinha 100% bacana -->
+    <script type="text/template" id="template-colinha">
+      <article class="colinha cartao-container a-avaliar" id="{{language}}-{{author._id}}" data-id-colinha="{{_id}}" data-id-avaliacao="" data-id-autor="{{author._id}}">
+        <div class="cartao">
+          <div class="tras">
+            <header class="cabecalho-tras">
+              <h3 class="autor">{{author.username}}</h3>
+              <a href="{{folderPath}}/index.html" target="_blank" class="visitar-a-pagina deep-purple-text text-lighten-2">Visitar a página</a>
+            </header>
+            <p>Avalie esta colinha:</p>
+            <form action="#" class="form-avaliacao">
+              <div class="lado-a-lado">
+                <div class="campo">
+                  <label for="completude-{{author._id}}">
+                    Completude
+                    <i class="material-icons tooltipped" data-position="top" data-tooltip="A colinha incluiu tudo o que é necessário<br>sobre o assunto, e de maneira sucinta?">help_outline</i>
+                  </label>
+                  <div class="range-field">
+                    <input type="range" class="completude" id="completude-{{author._id}}" name="completude" min="0" max="10">
+                  </div>
+                </div>
+                <div class="campo">
+                  <label class="label" for="beleza-{{author._id}}">
+                    Layout e design
+                    <i class="material-icons tooltipped" data-position="top" data-tooltip="A página ficou lindinha,<br>como se o criador tivesse gastado<br>tempo estilizando legal?">help_outline</i>
+                  </label>
+                  <div class="range-field">
+                    <input type="range" class="beleza" id="beleza-{{author._id}}" name="beleza" min="0" max="10">
+                  </div>
+                </div>
+              </div>
+              <div class="campo">
+                <label>
+                  <input type="checkbox" class="favorita" id="favorita-{{author._id}}" name="favorita">
+                  <span>❤️ esta é minha preferida de todas</span>
+                </label>
+              </div>
+              <div class="lado-a-lado">
+                <a href="#" class="girar deep-purple-text text-lighten-2">Voltar</a>
+                <button type="button" disabled class="avaliar waves-effect waves-light btn-small deep-purple">
+                  <i class="material-icons left tooltipped" data-position="top" data-tooltip="Faça login para avaliar">help_outline</i>Avaliar
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="frente">
+            <img src="{{folderPath}}/thumb.png" class="thumb" alt="Colinha de Alice">
+            <div class="descricao">
+              <div class="coracao-e-autor">
+                <span class="red-text favoritada">❤️</span>
+                <h3 class="autor">{{author.username}}</h3>
+              </div>
+              {{#favorites}}
+                <span class="badge">{{favorites}} favs</span>
+              {{/favorites}}
+              <a href="#" class="ver-colinha girar deep-purple-text text-lighten-2">Avaliar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </script>
+    <!-- fim de um article.colinha 100% bacana -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/mustache.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8" type="module"></script>
+  </body>
+</html>

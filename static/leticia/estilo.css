@@ -1,0 +1,98 @@
+body{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  background-image: linear-gradient(90deg, white 20%, lightblue, #03a9f4);
+}
+
+p {
+  font-size: 17px;
+}
+
+h1{
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+}
+
+h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  color: blue;
+  background-image: linear-gradient(90deg, white 20%, #90caf9, #2196f3);
+}
+
+h1,h2{
+  text-align: center;
+}
+
+h3, h4{
+    font-size: 19px;
+    color: #0277bd;
+}
+
+.listas{
+  text-align: justify;
+}
+
+li{
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px 15px;
+  background-image: linear-gradient( 0deg, white, #03a9f4);
+}
+caption{
+  text-decoration: underline;
+  font-size: 9px;
+  margin-bottom: 2px;
+  font-style: italic;
+  color: white;
+}
+
+tfoot {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-image: linear-gradient( 0deg, white, #03a9f4);
+  font-weight: bold;
+}
+
+td {
+  padding: 5px 15px;
+}
+
+th, td{
+  border:1px solid black;
+}
+
+img{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-top: 3%;
+  margin-right: auto;
+}
+
+#boxmodel {
+  float: right;
+  width: 200px;
+}
+
+#continuação{
+  clear:both;
+}
+
+#professorzinhohtml{
+  width: 250px;
+}

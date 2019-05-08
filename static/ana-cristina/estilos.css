@@ -1,0 +1,133 @@
+body, html {
+  background-image: url(imgs/triangulos.jpg);
+  background-position: left bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  font-family: "Lucida", cursive;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #586E7B;
+}
+
+header p {
+  font-size: 20px;
+  color: white;
+}
+
+section h1 {
+  color: #618C94;
+  font-size: 35px;
+}
+
+article h2 {
+  color: #41926C;
+}
+
+article h3 {
+  color: #BF897E;
+}
+
+article h4 {
+  color: #CEF3B5;
+  font-size: 20px;
+}
+
+article p {
+  color: white;
+  font-size: 20px;
+}
+
+aside {
+  font-size: 25px;
+  font-family:"Lucida", cursive;
+  color: #A54153;
+  text-decoration: double overline;
+  text-align: center;
+  padding-top: 18px;
+}
+
+ul {
+  color: white;
+}
+
+footer h1 {
+  font-size: 36px;
+  color: #C83042;
+}
+
+footer p {
+  color: white;
+  font-size: 20px;
+}
+
+.atenção::before {
+  content: "Atenção!";
+  display: inline-block;
+  background: green;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.estilizar {
+  background-color: #CCDEDE;
+  color: #43132C;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #A47A7D;
+  padding: 5px 2px;
+  display: inline-block;
+}
+
+.diminui {
+  width: 300px;
+}
+
+.bordas {
+ background: black;
+ border-radius: 5px;
+ border: 1px solid black;
+ padding: 2px;
+}
+
+.diminuir {
+  width: 400px;
+}
+
+.urls {
+  border: 1px solid;
+  border-color: #A199A3;
+  color: #A199A3;
+  padding: 2px;
+}
+
+.absol {
+  color: #E78D59;
+}
+
+.relat {
+  color: #C8C530;
+}
+
+.star {
+  width: 710px;
+}
+
+div .links {
+  font-size: 10px;
+}
+
+#historia {
+  color: #9DD5D5;
+}
+
+#html {
+  font-size: 20px;
+}

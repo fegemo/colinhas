@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Colinha!</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="icon.favicon">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Os 101 <del>dálmatas</del> estilos</h1>
+    <img id="f1" src="borda.jpg" alt="">
+    <img id="f2" src="borda.jpg" alt="">
+    <div class="direita">
+    <div class="pt2">
+    <p>Há 5 variações:<br>
+      [a] existência do atributo: [atributo]<br>
+      Neste caso, todo < a > que possua href <br>
+      [b] valor inteiro: [atrib="valor"] <br>
+      [c] começo do valor: [atrib^="inicio"]<br>
+      [d] fim do valor: [atrib$="final"]<br>
+      [e] trecho do valor: [atrib*="trecho"]
+    </p>
+    <h3>Seletores de estado</h3>
+    <div class="css">
+      a:link {<br>
+        color: blue;  /* [a] */<br>
+      }<br>
+      a:hover {<br>
+        color: cyan;  /* [b] */<br>
+      }<br>
+      a:active {<br>
+        color: gold;  /* [c] */<br>
+      }
+    </div>
+
+
+    <p>Há pelo menos 3 estados:<br>
+      [a] situação inicial :link <br>
+      [b] mouse em cima: :hover <br>
+      [c] começo do valor: :active <br>
+      Os seletores :hover e :active podem ser usados com outros elementos.</p>
+
+    <h3>Negação</h3>
+      <p>Formato: X:not(seletor)</p>
+      <div class="css">
+      p:not(.destacado) {<br>
+        color: gray;<br>
+      }
+      </div>
+      <p>Descrição: seleciona todos os elementos que não passem pelo teste do seletor
+      ou seja, no exemplo, seleciona todos os que não possuam a classe .destacado</p>
+    <h3>Outros seletores</h3>
+    <p>Seletores de posição dentro do pai:<br>
+      X:first-child <br>
+      X:last-child <br>
+      X:nth-child(n) <br>
+      Seletores de posição de um tipo: <br>
+      X:first-of-type <br>
+      X:last-of-type  <br>
+      X:nth-of-type(n)</p>
+    <p id="vcsabia">A parte dos seletores “com dois pontos” (eg, :not(), :hover) é chamada de pseudoclasse.</p>
+   <h2>Gradientes</h2>
+   <div class="css">
+     body{<br>
+       background-image: linear-gradient(to bottom right purple pink blue);<br>
+     }<br>
+     <strong>OU</strong> <br>
+     body{<br>
+       background-image: radial-gradient(purple pink blue);<br>
+     }<br>
+   </div>
+   <h2>Cores</h2>
+  <p>As cores podem ser mostradas como seu nome, por exemplo Green, Red, Pink, pelo seu código hexadecimal composto por 6 caracteres sendo eles números ou letras, por exemplo #8B0000 e #A52A2A ou pelo seu código rgba sendo composto por 3 números separados por vírgulas, por exemplo (128,0,0) e (139,0,0).</p>
+  <img id="cores"src="coreshtml.jpg" alt=""><br>
+  <a href="coreshtml.jpg">Ver imagem ampliada</a>
+  </div>
+    <div class="pt3">
+    <h2>Espaçamentos e tamanho</h2>
+    <h3>Margin e padding</h3>
+      <div class="css">
+      p{<br>
+        border:1px dotted black;<br>
+        padding: 40px;<br>
+        margin: 10px;<br>
+        text-align:justify;<br>
+        }
+      </div>
+      <p><strong>Padding:</strong> Espaçamento interno, da borda para dentro <br>
+      <strong>Margem:</strong> Espaçamento externo, da borda para fora</p>
+
+      <h3>Width e height</h3>
+      <p>Podemos especificar a largura dos elementos block por meio da propriedade width</p>
+      <div class="css">
+      p {<br>
+        width: 260px;<br>
+      }
+    </div>
+
+    <p>Já para especificar a altura de um elemento utilizamos a propriedade height</p>
+    <div class="css">
+    img {<br>
+      height: 400px;<br>
+    }
+    </div>
+    <h2>Propriedades de texto</h2>
+    <p><strong>font-size:</strong>Define o tamanho da fonte, e.g., 18px <br>
+    <strong>font-weight:</strong>Define a espessura da fonte <br>
+    Valores: normal, lighter, bold, bolder ou um número representando sua espessura <br>
+    <strong>font-style:</strong>Define o estilo da fonte <br>
+    Valores: normal e italic <br>
+    <strong>text-decoration:</strong>Sublinha, risca ou coloca um risco acima do texto:<br>
+    Valores: none (nenhum), underline (sublinhado), overline (acima do texto), line-through (riscado)</p>
+
+    <h2>Bordas</h2>
+    <p>A propriedade border é um atalho: border-width, border-style e border-color <br>
+      Exemplo (os dois são equivalentes):</p>
+      <div class="css">
+        p {<br>
+          border-width: 1px;    /* largura de 1 pixel */<br>
+          border-style: solid;  /* borda toda colorida */<br>
+          border-color: red;    /* cor vermelha */<br>
+        }<br>
+        <strong>OU</strong> <br>
+        p {  /* preferimos esta forma, que é mais sucinta */<br>
+          border: 1px solid red;<br>
+        }
+      </div>
+      <h2>Box Model</h2>
+      <p>O navegador enxerga todo elemento de conteúdo como uma “caixa” <br>
+        A “caixa” é formada por:<br>
+        -Espaço do conteúdo <br>
+        -Espaço de preenchimento (padding)<br>
+        -Bordas (border)<br>
+        -Espaço externo (margin)<br>
+      </p>
+      <img id="box" src="box-model.png" alt="">
+      <p>É possível alterar o significado da width e height de um elemento usando a propriedade box-sizing:<br>
+        <strong>box-sizing: content-box (valor padrão)</strong><br>
+        width = largura do conteúdo <br>
+        <strong>box-sizing: border-box</strong> <br>
+        width = conteúdo + padding + border
+      </p>
+
+    </div>
+
+        </div>
+    <div class="esquerda">
+<h2>Anatomia de uma regra CSS</h2>
+<h3>Regra</h3>
+<div class="css">
+  h1{<br>
+  text-align: center;<br>
+  color: red;<br>
+  font-family: Arial <br>
+  }
+</div>
+<p>Dentro de uma tag CSS existem seletores, declarações, propriedades e valores.Na regra apresentada acima
+o termo h1 seria o seletor, "text-align: center;" é um exemplo de declaração, onde "text-align" é a propriedade e "center" é o valor.</p>
+<h2>Principais tipos de seletores</h2>
+<h3>Tag:</h3>
+<div class="css">
+  p {/* usamos 'p', que é o nome da tag de parágrafo */<br>
+  margin-left: 5%;<br>
+  }
+</div>
+<h3>Id:</h3>
+<div class="css">
+  #dálmata {/* usamos '#dálmata', que é o nome do id */<br>
+  width:100px;<br>
+  }
+</div>
+<h3>Classe:</h3>
+<div class="css">
+  .dálmata {/* usamos '.dálmata', que é o nome da classse */<br>
+  width:100px;<br>
+  }
+</div>
+  <h2>Seletores mais avançados</h2>
+  <h3>Descendente</h3>
+  <p>Formato: X Y (antecessor, espaço, elemento selecionado)
+    Exemplo:</p>
+<div class="css">
+  ul a {<br>
+  text-decoration: none;<br>
+  }
+</div>
+<p>Descrição: seleciona todos hiperlinks a que têm um ul como antecedente (pai, avô, bisavô etc.)</p>
+<h3>Filho direto</h3>
+<p>Formato: X > Y (pai, sinal de maior, elemento selecionado)
+Exemplo:</p>
+<div class="css">
+#menu-principal > ul {<br>
+  padding: 20px;<br>
+}
+</div>
+<p>Descrição: seleciona todos os ul que têm #menu-principal como pai</p>
+<h3>Seletores de Atributo</h3>
+<p>Podemos selecionar elementos HTML de acordo com seus atributos:</p>
+<div class="css">
+  a[href] {<br>
+    color: blue;  /* [a] */<br>
+  }<br>
+  a[href="http://google.com"] {<br>
+    color: blue;  /* [b] */<br>
+  }<br>
+  a[href^="http"] { <br>
+    color: blue;  /* [c] */<br>
+  }<br>
+  a[href$=".com"] {<br>
+    color: blue;  /* [d] */<br>
+  }<br>
+  a[href*="google"] {<br>
+    color: blue;  /* [e] */<br>
+  }<br>
+</div>
+</div>
+
+
+  </body>
+
+</html>

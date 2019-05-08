@@ -1,0 +1,88 @@
+h1{
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  background-color: #008a85;
+  margin: 0;
+}
+h2, h3, h4{
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  margin-top: 30px;
+}
+p{
+  font-family: 'Bad Script', cursive;
+}
+body{
+  background-image: linear-gradient(white 55%, #c7fffd, #008a85);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+html{
+  height: 100%;
+}
+#Estrutura{
+  margin-right: 10px;
+  text-align: justify;
+}
+#Estrutura img{
+  float: left;
+  width: 400px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#anatomia{
+  clear: left;
+  text-align: justify;
+  margin-left: 10px;
+}
+#anatomia img{
+  float: left;
+  width: 600px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.codigo{
+  text-align: center;
+}
+#id_esquema{
+  float: left;
+  width: 400px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+#class{
+  float: right;
+  width: 500px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.comentário{
+  margin-left: 550px;
+  background-color: #003e3b;
+  color: white;
+  margin-right: 450px;
+  text-align: center;
+}
+#css_incluir img{
+  float: left;
+  margin-right: 15px;
+  width: 500px;
+}
+#icone{
+  margin-top: 150px;
+}
+.url{
+  margin-left: 200px;
+  float: left;
+  width: 50%;
+}
+#link{
+  margin-top: 70px;
+  text-align: center;
+}
+#css_incluir{
+  margin-top: 50px;
+}

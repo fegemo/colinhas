@@ -1,0 +1,110 @@
+h1{
+  text-align: center;
+  font-size: 350%;
+  font-family: 'Cookie', cursive;
+  background-color: white;
+  color: black;
+  padding: 50px;
+  border: dotted black 3px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+h2{
+  font-size: 200%;
+}
+h3{
+  font-size: 170%;
+}
+body{
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0px;
+}
+.css{
+  border: dotted black 3px;
+  border-radius: 5px;
+  background-color: white;
+  box-sizing: border-box;
+  width: 370px;
+  padding: 10px;
+  margin-left: 100px;
+  font-family: arial;
+}
+#f1{
+  float: left;
+}
+#f2{
+  float: right;
+}
+h2, p, h3{
+  color: white;
+  width: 370px;
+  text-align: center;
+  margin-left: 100px;
+}
+.pt3 h2,h3{
+  margin-left: 0px;
+}
+.pt3 p{
+  margin-left: 0px;
+}
+h2, h3{
+  font-family: 'Cookie', cursive;
+}
+p{
+  font-family: arial;
+  text-align: justify;
+}
+#vcsabia::before{
+  content: "Você sabia?";
+  font-weight: bold;
+  background: white;
+  border-radius: 5px;
+  padding:3px;
+  color:black;
+  margin-right: 12px;
+}
+#box{
+
+  margin-right:100px;
+}
+.esquerda {
+    float:left;
+    width:10px;
+    margin-right: 10px;
+
+
+}
+.direita {
+    float:right;
+    margin-right:0px;
+    align-content: center;
+
+}
+.pt2 {
+    float:left;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.pt3 {
+    float:right;
+    margin-right:0px;
+    padding-left: 0px;
+}
+.pt3 .css{
+  margin-left: 0px;
+}
+.pt3{
+    margin-left: 20px;
+}
+#cores{
+  width: 370px;
+  margin-left:100px;
+}
+a{
+  margin-left: 100px;
+  color: white;
+  font-size: 150%;
+}

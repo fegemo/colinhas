@@ -1,0 +1,223 @@
+body
+{
+  margin: 0px;
+}
+
+header
+{
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Gugi', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+#gatinho
+{
+    width: 250px;
+    float: right;
+    margin-right: 20px;
+}
+
+header h1
+{
+  font-size: 40px;
+  text-shadow: 2px 2px;
+}
+
+header h4
+{
+  font-size: 20px;
+}
+
+header p
+{
+  padding: 5px;
+  font-size: 20px;
+}
+
+section
+{
+  padding-top: 20px;
+}
+
+main
+{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvq22c6oxHknDV2QY1SXP3bYSj-RIiJgPwHQNlmCsuhOr-LPQbOw);
+  background-size: auto;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+main h1
+{
+  font-family: 'Gugi', cursive;
+  font-size: 36px;
+  padding-top: 30px;
+  border-bottom: 4px solid black;
+  text-align: center;
+}
+
+.marcadores
+{
+  color: aquamarine;
+}
+
+.codigo
+{
+  width: 50%;
+  border-radius: 5px;
+}
+
+#hteml
+{
+  float: right;
+  border-radius: 200px;
+}
+
+code
+{
+  color: white;
+  padding-left: 3px;
+}
+
+pre
+{
+  border-radius: 10px;
+  width: 30%;
+  background-color: black;
+  padding-left: 1px;
+}
+
+.seletor
+{
+  color: red;
+}
+
+.propriedade
+{
+  color: aquamarine;
+}
+
+nav
+{
+  border: 1px solid gray;
+  width: 200px;
+  background-color: #CDC9C9;
+
+}
+
+th
+{
+  padding-bottom: 10px;
+}
+
+td
+{
+  padding-bottom: 4px;
+}
+
+#xazam
+{
+  float: right;
+  width: 600px;
+  padding-top: 40px;
+  clear: right;
+  padding-right: 40px;
+  margin-right: 550px;
+}
+
+#TagCont p
+{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.produtos
+{
+  margin-left: 20%;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px dashed black;
+  box-sizing: border-box;
+  width: 1100px;
+  background-color: azure;
+  display: block;
+  margin-top: 50px;
+}
+
+article h2
+{
+  font-size: 30px;
+}
+
+.alteracao
+{
+  width: 1000px;
+  padding-top: 5px;
+}
+
+#TagCont .marcadores
+{
+  color: Cyan;
+}
+
+div
+{
+  text-align: center;
+  font-size: 25px;
+}
+
+div img
+{
+  width: 700px;
+}
+
+#Aimage img
+{
+  width: 700px;
+}
+
+.AtrEsp
+{
+  border: 1px solid grey;
+  border-radius: 50px;
+  padding: 3px;
+  background-color: LightGray;
+}
+
+#Hyperlink img
+{
+  width: 700px;
+}
+
+#importancia table
+{
+  border-collapse: collapse;
+}
+
+tbody, thead , th, td
+{
+  border: 3px solid black;
+}
+
+nav :link
+{
+  color: #2F4F4F;
+}
+
+nav a:hover
+{
+  color: white;
+}
+
+nav :visited
+{
+  color: #8B5A2B;
+}
+
+#Principio
+{
+  padding-bottom: 100px;
+}

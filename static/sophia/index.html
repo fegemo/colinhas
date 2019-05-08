@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Colinha html</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="html5.png">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Lateef" rel="stylesheet">
+  </head>
+  <body>
+   <h1>Colinha HTML</h1>
+   <div id="Estrutura">
+     <h2>Estrutura de um arquivo HTML</h2>
+     <img src="html-homepage-layout-demo.png">
+     <p>Um arquivo HTML completo envolve desenas de tags, cada uma delas tem um propósito e um resultado especial.</p>
+     <p>A <strong>tag html</strong> envolve todas as outras tags exceto a tag especial "!DOCTYPE html". Dentro dela,
+     <u>deve</u> conter as tags "head" e "body".</p>
+     <p>A <strong>tag head</strong> contém meta-informação sobre este arquivo html, como o título da página no topo do navegador,
+     codificação (encoding) da página, ícone, ou até inclusão de arquivos.</p>
+     <p>A <strong>tag body</strong> contém todo o conteúdo da página: tags de parágrafos("p"), títulos e subtítulos ("h1", "h2",...),
+     imagens("img"), etc.</p>
+   </div>
+   <div id="anatomia">
+     <h2>A anatomia de uma tag</h2>
+     <img src="tag_forma.png" >
+     <p>Neste exemplo, a tag <strong>p</strong> é tag de abertura, <strong>/p</strong> a tag de fechamento."Meu gatinho é muito mal humorado"
+     o conteúdo da tag e todos eles compondo um elemento.</p>
+     <p>Uma tag precisa ser aberta, <strong>mas nao nescessariamente fechada</strong>.</p>
+     <p>Tags de abertura podem ter atributos: </p>
+     <p><em>img src</em>="bob-esponja.png"</p>
+     <p class="codigo">Em <strong>img</strong>, o atributo src aponta para a URL do arquivo</p>
+   </div>
+   <div id="atributos">
+     <h2>Atributos universais</h2>
+     <img src="seletores.png" id="id_esquema">
+     <p>Para selecionar apenas alguma parte específica e estiliza-la é possível usar os atributos universais HTML:
+     <strong>class</strong> e <strong>id</strong>.</p>
+     <p>Até agora, estilizamos elementos HTML de duas formas:</p>
+     <p>Primeira forma: selecionando a tag:</p>
+     <p class="codigo"><strong>p { color: blue; }</strong></p>
+     <p>Segunda forma: selecionando um elemento em específico criando uma <strong>id</strong> para ele. Supondo que temos: </p>
+     <p class="codigo"><strong>p id="resumo"</strong> Este é o resumo da notícia...<strong>/p</strong></p>
+     <p class="codigo"><strong>#resumo { color: blue; }</strong></p>
+     <p>Como fazemos, então, para estilizar não apenas um, mas um subconjunto de elementos da forma como queremos? Usando <strong>classes</strong></p>
+     <img src="class.png" id="class">
+     <p class="codigo">p class="destacado">Primeiro /p</p>
+     <p class="codigo">p class="destacado">Segundo /p</p>
+     <p>E, em um arquivo CSS, podemos escrever o nome da tag, seguido por um ponto ".", seguido pelo nome da classe:
+     <p class="codigo"><strong>p.destacado { font-weight: bold; }</strong></p>
+     <p class="codigo"><strong>.destacado { font-weight: bold; }</strong></p>
+   </div>
+   <h2>Tags de conteúdo e seus atributos</h2>
+   <h3><strong>Tag de Paragrafo (p)</strong></h3>
+   <p>Quebras de linha são feitas automaticamente.</p>
+   <h3><strong>Tags de Títulos e Subtítulos ( h1 . . . h6 )</strong></h3>
+   <p>Podemos ter até seis <u>níveis</u> de títulos! Mas a quantidade de títulos é infinita.</p>
+   <h3><strong>Tag de Imagem (img)</strong></h3>
+   <p>Para exibir imagens:</p>
+   <p class="codigo">img src=". . ." alt=". . ."</p>
+   <p>O atributo <strong>src=". . ."</strong> (abreviação de source) é usado para definir o endereço (URL) da imagem.
+   Este endereço pode ser externo ou interno</p>
+   <h4>URL externa x interna</h4>
+   <div class="url">
+     <p><strong>URL externa</strong></p>
+     <p>Aponta para algo (imagem etc.) de um outro site. Exemplos:</p>
+     <p>http://google.com</p>
+     <p>http://fegemo.github.io/imgs/kraken.png</p>
+     <p>https://twitter.com/elonmusk</p>
+   </div>
+   <p><strong>URL interna</strong></p>
+   <p>Aponta para algo da própria página/site</p>
+   <p>Pode ser um caminho relativo ou absoluto:</p>
+   <p>racas-raras.html <strong>(relativo)</strong></p>
+   <p>/arquivos/fotosdafesta.zip <strong>(absoluto)</strong></p>
+   <p id="link"><strong>Tag de Hyperlink (a href="".../a)</strong></p>
+   <p class="url"><strong>Link externo (para fora da página):</strong></p>
+   <p class="url">a href="http://www.google.com">Texto do link externo/a</p>
+   <p><strong>Link interno (para algo hospedado no próprio computador):</strong></p>
+   <p>a href="downloads/exemplo.zip">Texto do link interno/a</p>
+   <div id="css_incluir">
+     <h2>Como incluir código CSS</h2>
+     <img src="css_incluir.png">
+     <p>Um arquivo HTML podoe referenciar um CSS assim:</p>
+     <p>link rel="stylesheet" href="arquivo-de-estilos.css"</p>
+     <p>Assim mais de um arquivo HTML pode usar esse CSS, ou seja, o código CSS é reaproveitado</p>
+     <p class="comentário">Deu branco e esqueceu a sintaxe na hora da prova?</p>
+     <p class="comentário">Apenas digite <strong>"link"</strong> e aperte tab</p>
+   </div>
+   <div id="icone">
+   <h2>Como colocar um ícone</h2>
+   <p>Para adcionar um ícone(favicon) à sua página HTML basta você utilizar a <strong>tag link</strong>.
+   <p class="codigo">link rel="icon" href="imgs/url-da-imagem"</p>
+   <p>Como o ícone não faz parte das informações que serão exibidas na página, ele deve ficar dentro da <strong>tag head</strong>
+   e geralmente abaixo da <strong>tag title</strong>.</p>
+   </div>
+   <p class="comentário">BOA PROVA JOVEM :)</p>
+  </body>
+</html>

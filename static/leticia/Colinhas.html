@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Coding-Html-icon.png">
+    <title>Colinhas HTML</title>
+  </head>
+  <body>
+    <h1>Colinhas para HTML</h1>
+    <img id="professorzinhohtml" src="img/html.jpg">
+    <h2>Estrutura do HTML</h2>
+    <p>
+      O arquivo HTML é formado por tags por principais:
+      <table>
+        <th>Tags</th>
+        <th> O que são</th>
+        <tr>
+          <td>&lt;!DOCTYPE html&gt;</td>
+          <td>Serve para especificar qual a versão html usada</td>
+        </tr>
+        <tr>
+          <td>&lt;html&gt; &lt;/html&gt;</td>
+          <td>É aquele que envolve todo o arquivo</td>
+        </tr>
+        <tr>
+          <td>&lt;head&gt; &lt;/head&gt;</td>
+          <td>Cabeçalho do arquivo;</td>
+        </tr>
+        <tr>
+          <td>&lt;title&gt; &lt;/title&gt;</td>
+          <td>Título da página;</td>
+        </tr>
+        <tr>
+          <td>&lt;body&gt; &lt;/body&gt;</td>
+          <td>Contém todo conteúdo do arquivo, os textos e tags</td>
+        </tr>
+      </table>
+    </p>
+    <h2>Anatomia das Tags</h2>
+    <p>
+      Um arquivo html é formado por diversas tags, a anatomia dela é composta
+      por abertura, fechamento, conteúdo, sendo:
+      <table>
+        <th>Parte da tag</th>
+        <th>Função</th>
+        <tr>
+          <td>&lt;h1&gt;</td>
+          <td>Abre</td>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt; Colas &lt;/h1&gt;</td>
+          <td>Conteúdo</td>
+        </tr>
+        <tr>
+          <td>&lt;/h1&gt;</td>
+          <td>Fecha</td>
+        </tr>
+      </table>
+    Também temos tags que permitem atribuição:
+    <ul class="listas">
+      <li> &lt;img src=&quot;colas-para-prova.png&quot;&gt</li>
+    </ul>
+    </p>
+    <h3>O que são atributos?</h3>
+    <p>
+      Atributos são comandos ou informações específicas dadas
+      para determinada tag, esse comandos são direcionados ao navegador
+      para que ele interprete e apresente o que há no atributo.
+      São recebidas pelo navegador assim:
+      &lt;img src=&quot;http://www.ligacaoteen.com.br/wp-content/uploads/2012/05/tec.ninj-de-colar-7.jpg&quot;/&gt;
+       e são enviadas para a página assim :
+      <img src="http://www.ligacaoteen.com.br/wp-content/uploads/2012/05/tec.ninj-de-colar-7.jpg"/>
+    </p>
+    <h4>Atributos Universais</h4>
+    <p>
+      Os atributos universais servem para selecionar dentro do código HTML um
+      determinado elemento ou vários elementos, são chamados assim pois qualquer
+      elemento pode receber.
+      <ul class="listas">
+        <li> Os ids são usados para estilizar elementos em css, para determinar
+          seus nomes é só colocar depois do seletor " id="alguma coisa" "
+          detalhe importante o id deve ser único no código e são iniciados
+          com # no css;</li>
+        <li> As classes servem para por exemplo estilizar
+          um subconjunto de elementos, para determinar um nome a classe é só
+          colocar após o seletor " class="importantes" ", como os ids as classes
+          também devem ser únicos no código e são iniciados com um ".".</li>
+      </ul>
+    </p>
+    <h2>Vamos as tags principais de um arquivo HTML</h2>
+    <h3>Tags principais</h3>
+    <p>
+      <ul class="listas">
+        <li>
+        O parágrafo(&quot;&lt;p&gt; &lt;/p&gt;&quot;), e suas quebras de linhas são
+        feitas automaticamente;</li>
+        <li> Os títulos e subtítulos(&quot;&lt;h1&gt; &lt;/h1&gt;&quot;;)
+          e os números após o "h" vai até o 6, podendo conter então 6
+          tipos de subtítulo;</li>
+        <li> A imagem(&quot;&lt;img src=&quot;aqui-url-da-imagem&quot;&gt;&quot;) quando estiver
+          dentro de outro site e quando tiver dentro do próprio arquivo usa
+          &quot;&lt;img src=&quot;endereço-relativo-ou-absoluto&quot;&gt;&quot;;</li>
+        <li> Hiperlinks para links externos &quot;&lt;a href=&quot;http://www.google.com&quot;&gt;Texto
+          do link externo&lt;/a&gt;&quot;, para links internos &quot;&lt;a href=&quot;downloads/exemplo.zip&quot;&gt;Texto
+          do link interno&lt;/a&gt;&quot; essa tag apresenta um atributo target que pode ter valor de abrir o link na mesma
+          aba chamado _self e o _blank que abre o link em uma nova aba;</li>
+      </ul>
+    </p>
+    <h4>Tags de Importância</h4>
+    <p>
+      <ul class="listas">
+        <li>O Strong(&quot;&lt;strong&gt; &lt;/strong&gt;&quot;) é usada para marcar textos importantes
+        e são escritas em <strong>negrito</strong>;</li>
+        <li>O em(&quot;&lt;em&gt; &lt;/em&gt;&quot;) são usadas para dar <em>ênfase ao textos
+        que são escritos em italico</em>;</li>
+        <li>O del(&quot;&lt;del&gt; &lt;/del&gt;&quot;) indicam que os elementos do texto foram
+        removidos e riscados;</li>
+        <li>O ins(&quot;&lt;ins&gt; &lt;/ins&gt;&quot;) sublinham os textos desejados;</li>
+        <li>O mark(&quot;&lt;mark&gt; &lt;/mark&gt;&quot;) realça parte do texto, que pode ser importante para o leitor;</li>
+      </ul>
+    </p>
+    <h2>Elementos inline e block</h2>
+    <p>
+      Elementos inline e block são a forma que os códigos assumem na página,
+      os elementos block são aqueles que iniciam uma nova linha e ocupam todo o espaço horizontal
+      como o parágrafo os títulos, listas não ordenadas, já os inline ocupam apenas o espaço necessário
+      e não precisam iniciar uma nvoa linha, como strong, em, mark.
+    </p>
+    <h2>Criando tabelas</h2>
+    <p>
+      Uma tabela é formada por linhas, colunas, sendo que uma é para o Cabeçalhoe e a última
+      para o rodapé. Tabelas também contém legendas.
+    </p>
+    <h3>Tabelas Simples</h3>
+    <p>
+      As tabelas simples são formadas pelas tags:
+      <ol class="listas">
+        <li>&lt;table&gt;...&lt;/table&gt;</li>
+        <li>&lt;tr&gt;...&lt;/tr&gt;, linha da tabela</li>
+        <li>&lt;td&gt;...&lt;/td&gt;, célula de dados</li>
+        <li>&lt;th&gt;...&lt;/th&gt;, célula de cabeçalho</li>
+      </ol>
+    </p>
+    <p>
+      A função de cada tag da tabela
+      <ul class="listas">
+        <li>A tabela começa com a tag &lt;table&gt; e finaliza com &lt;/table&gt;; </li>
+        <li>A cada linha utiliza &lt;tr&gt; para começar e &lt;/tr&gt; para terminar; </li>
+        <li>&lt;td&gt; armazena os dados da tabela e a tag &lt;th&gt; armazena os dados do cabeçalho;</li>
+        <li>&lt;td&gt; e &lt;th&gt; devem estar dentro de uma linha (&lt;tr&gt;);</li>
+        <li>As tags &lt;th&gt; estão sempre em negrito.</li>
+      </ul>
+      Para mesclar células na horizontal usa se colspan="X", sendo que x é o número de
+      colunas que deseja juntar e para vertical usa rowspan="Y", sendo y é o número de linhas que a célula vai conter.
+      Esses valores são colocados após a tag mas dentro da ">".
+    </p>
+    <h3>Tabelas Completas</h3>
+    <p>
+      Uma tabela completa possui cabeçalho, corpo e rodapé, como por exemplo essa:
+      <table>
+        <caption>Raças de cachorros descendentes de lobos</caption>
+        <thead>
+          <tr>
+            <th>Raças</th><th>Características</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cão-lobo</td><td>Os cães-lobo genuínos são animais incrivelmente saudáveis.
+              O seu comportamento tende a ser parecido a dos lobos, mais que dos cães.
+              Geralmente eles rosnam ou uivam em vez de latir.</td>
+          </tr>
+          <tr>
+            <td>Samoiedo</td><td>O samoiedo é um cachorro que parece lobo de origem russa.
+            O caráter dele é animado, brincalhão, amigável e sociável, mas é alerta.
+            Essas características o descartam como cão de guarda.</td>
+          </tr>
+          <tr>
+            <td>Malamute do Alasca</td><td>O malamute do Alasca é um cachorro que se parece com um lobo de um jeito fiel e
+              espetacular. A sua pelagem é especial e curiosamente, não perde volume ainda que se molhe.
+              São cães muito fortes, pois, podem
+              carregar até 20 kg por vários quilômetros</td>
+          </tr>
+          <tr>
+            <td>Husky siberiano</td><td>É um cão de pastoreio que não lida bem com a solidão. É um animal muito
+              carinhoso, ativo e cordial e a obediência não é a melhor das suas virtude.</td>
+          </tr>
+          <tr>
+            <td>Cão lobo checoslovaco</td><td>Estes cães devem ser devidamente socializados com pessoas e outros animais de
+            estimação desde uma idade muito jovem. A raça foi polida até que em 1982,
+            o cão lobo checoslovaco foi reconhecido como um símbolo nacional da República da Checoslováquia.
+            Se não se socializam adequadamente, tendem a ser tímidos e desconfiados, com repentinas reações agressivas.</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td colspan="2">Cães descendentes de lobos são tops!</td>
+            </tr>
+          </tfoot>
+        </tbody>
+      </table>
+      <ul class="listas">
+        <li>A legenda usa a tag &lt;caption&gt;Raças de cachorros descendentes de lobos&lt;/caption&gt;</li>
+        <li>O cabeçalho, corpo e rodapé usa as seguintes tags respectivamente &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt;</li>
+      </ul>
+    </p>
+    <h2>Agrupamento de elementos HTML</h2>
+    <h3>Div</h3>
+    <p>
+      Div(&lt;div&gt;&lt;/div&gt;) serve para junção de elementos html, sozinho em um código ele não apresenta semântica,
+      ou seja, não significa nada sozinho. É um elemento block.
+      Agrupa por exemplo parágrafos, títulos e subtítulo, imagem.
+    </p>
+    <h3>Span</h3>
+    <p>
+      Span(&lt;span&gt;&lt;/span&gt;) apresenta mesma função que a Div, porém é inline.
+    </p>
+    <h2>Box Model</h2>
+    <img id="boxmodel" src="https://pressupinc.com/wp-content/uploads/2014/01/box-model.png"/>
+    <p>
+      Box Model é a forma que o navegador vê todo o conteúdo dentro de uma "caixinha". Essa "caixinha" é formada por:
+      <ul class="listas">
+        <li>Espaço do conteúdo</li>
+        <li>Espaço de preenchimento (padding)</li>
+        <li>Bordas (border)</li>
+        <li>Espaço externo (margin)</li>
+      </ul>
+     </p>
+     <p id="continuação">
+       Nas ordens dos itens acima começando de dentro para fora na imagem. E os números que aparecem
+       são os tamanhos que cada elemento ocupa.
+     </p>
+     <p>
+       Quando se define valores largura e altura, você está definindo o tamanho do conteúdo da caixinha e não ela toda.
+       É possível alterar o significado da width(largura) e height(altura) de um elemento usando box-sizing, uma propriedade:
+       <ul>
+         <li>box-sizing: content-box (valor padrão)</li>
+         <li>width = largura do conteúdo</li>
+         <li>box-sizing: border-box</li>
+         <li>width = conteúdo + padding + border</li>
+       </ul>
+     </p>
+     <h2>Os últimos mas não menos importantes</h2>
+     <h3>Ícone</h3>
+     <p>
+       Salve uma imagem no formato .ico e na página HTML, dentro do <head></head>, coloque:
+       &lt;link rel=&quot;icon&quot; href=&quot;"nome-imagem"&quot;&gt;
+     </p>
+     <h3>Incluir código css</h3>
+     <p>
+       Coloque o link no código html &lt;link rel=&quot;stylesheet&quot; href=&quot;"nome-css"&quot;&gt;,
+       assim você pode reaproveitar o código css em um arquivo que tem várias páginas.
+     </p>
+  </body>
+</html>

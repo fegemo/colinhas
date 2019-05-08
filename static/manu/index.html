@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>"Colinha" HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imgs/html_icon1.png">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo_p1">Colinha sobre</h1>
+      <h1 id="titulo_p2">HTML</h1>
+      <h2 id="subtitulo_p">Saiba <del>tudo</del> sobre HTML para aquela sua prova marota.</h2>
+      <img src="imgs/city.png" alt="" id="img_header">
+    </header>
+    <main>
+      <aside>
+        <h2>Anatomia básica</h2>
+        <img src="imgs/html_basico.png" alt="" class="imgs_aside">
+        <p class="obs"><strong>PS:</strong> o "meta" não é obrigatório, porém deixa o link organizado.</p>
+        <h2>Anatomia com tags básicas</h2>
+        <img src="imgs/html_abreviado.png" alt="" class="imgs_aside">
+        <h2>Organização semântica</h2>
+        <img src="imgs/estrutura-semantica.png" alt="" class="imgs_aside">
+        <p class="obs"><strong>PS:</strong> deixa seu codigo mais organizado, sem necessitar de muitos "div" e "class"</p>
+      </aside>
+
+      <section>
+        <article>
+          <h2 class="titulo">Atributos de tag</h2>
+          <p>Tags são linguagens de marcação para a estrutura que quer adicionar ao seu texto.
+            Cada uma contém uma instrução para que a página web renderize, como um rótulo.</p>
+          <p>A tage de abertura inicia-se com "<" e acabam com ">", e a tag de fechamento
+              inicia-se "</" e depois ">", colocando seu conteúdo entre elas. Exemplo:</p>
+              <p>Exemplo: <code>< p >...< /p ></code> <code>< mark >...< /mark ></code></p>
+        </article>
+        <article>
+          <h2>Tags universais</h2>
+          <p>Existe duas tags universais feitas para selecionar elementos especificos.
+            O 1° é o "id" que seleciona um elemento específico, dando-lhe um nome de sua escolha,
+            é ótimo para estilizar apenas tal tag e bom para um hyperlink da prórpia página. </p>
+            <p class="obs"><strong>PS:</strong> não se pode criar dois "id" com o mesmo nome, para isso crie com o próximo elemento.</p>
+            <p>O 2° é o "class" que tem a mesma função do "id", porém,
+              seu diferencial é que seleciona um conjunto de tags da sua escolha,
+              dando-os também facilidade para estilizar oque pertence a classe, sem codecisar dar um id para cada elemento. </p>
+              <p>Exemplo: <code>< p id="exemplo" ></code> e <code>< p class="exemplo" ></code></p>
+        </article>
+        <article>
+            <h2>Tags de agrupamento</h2>
+            <p>Temos duas tags de agrupamento, "div" e "span" que servem para aglomeração,
+              ambas não tem semântica porém são muito utilizadas para criar uma unificação, melhorando na estilização. </p>
+              <p>Exemplo: <code>< div >...< /div ></code> é <strong>block</strong>. Já <code>< span >...< /span ></code> é <strong>inline</strong>.</p>
+        </article>
+        <article>
+          <h2>Algumas das principais tags!</h2>
+          <p>Aqui está alguma das tags que mais usará ao montar sua página web,
+            lembre-se que são MUITAS e você deve pesquisar quando necessário
+            (não na prova, mas relaxe jovem padawan, sabendo as básicas você se vira)</p>
+            <img src="imgs/tags1" alt="" class="principais_tags">
+            <img src="imgs/tags2" alt="" class="principais_tags">
+        </article>
+        <article>
+          <h2>Como por um icone na aba?</h2>
+          <p>Para adicionar um iconezinho na aba é facil,
+            adicione <code>< link rel="icon" href="..." ></code>com o nome do arquivo nos 3 pontinhos.</p>
+            <p class="obs"><strong>PS:</strong> lembre-se de por uma foto com boa resolução em pequeno tamanho.</p>
+        </article>
+        <article>
+          <h2>Como por um arquivo css no HTML?</h2>
+          <p>Para adicionar um outro arquivo com todas propriedade css é a mesma lógica do icone,
+          <code>< link rel="stylesheet" href="..." ></code> e no lugar do três pontinhos, coloque um arquivo .css nele e prontinho!</p>
+        </article>
+        <article>
+          <h2>Elementos semânticos</h2>
+          <p>Substitui algumas div/span, pois organiza e dá mais entendimento ao navegador.</p>
+          <p>Primeiro, os <strong>block</strong>.</p>
+          <ul>
+            <li><code>< header >< /header ></code>
+              <ul><li>Cabeçalho da página.</li>
+              </ul>
+            </li>
+            <li><code>< main >< /main ></code>
+              <ul><li>Conteúdo principal da página.</li>
+              </ul>
+            </li>
+            <li><code>< footer >< /footer ></code>
+              <ul><li>Rodapé da página.</li>
+              </ul>
+            </li>
+            <li><code>< main >< /main ></code>
+              <ul><li>Um componente completo da página, como um post em um site ou um produto em uma loja.</li>
+              </ul>
+            </li>
+            <li><code>< section >< /section ></code>
+              <ul><li>Uma seção lógica da página.</li>
+              </ul>
+            </li>
+            <li><code>< nav >< /nav ></code>
+              <ul><li>Uma seção feita para navegação, contendo então links da página.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>Agora os <strong>inline</strong></p>
+          <ul>
+            <li><code>< aside >< /aside ></code>
+              <ul><li>Uma seção periférica da página.</li>
+              </ul>
+            </li>
+            <li><code>< time >< /time ></code>
+              <ul><li>Recodesenta alguma data/horário codesente na página.</li>
+              </ul>
+            </li>
+            <li><code>< mark >< /mark ></code>
+              <ul><li>Recodesenta uma marcação de texto, <mark>estilo marcadores</mark>.</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

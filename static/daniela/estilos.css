@@ -1,0 +1,11 @@
+body {
+  background-color: blue;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+  background-image: linear-gradient(to left top, pink, yellow);
+  font-size: 100%;
+}

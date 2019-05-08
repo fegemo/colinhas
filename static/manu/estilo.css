@@ -1,0 +1,95 @@
+body{
+  background-color: white;
+  background-size: cover;
+  color: black;
+  margin: 0;
+  font-family:"Oxygen", sans-serif;
+  font-size: 17px;
+}
+header{
+  background-color: black;
+  padding-top: 46px;
+  text-align: left;
+  font-size: 24px;
+  border-bottom: 0;
+  min-height: 42px;
+  text-align: left;
+}
+h1, h2{
+  margin: 0;
+  color: white;
+}
+h2{
+  font-size: 22px;
+  font-family: "Bungee";
+}
+aside{
+  background-color: black;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 10px 14px #f4e542;
+  height: 700%;
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: -40px;
+  margin-bottom: -60px;
+  display: block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+code{
+  background-color: #ddd;
+  display: inline;
+  border-radius: 3px;
+  color: inherit;
+}
+.imgs_aside{
+  height: 60%;
+  width: 60%
+}
+main{
+  margin-left: 20px;
+  margin-top: 5px
+}
+article p{
+  margin-right: 200px;
+}
+article h2{
+  background-color: black;
+  box-shadow: 5px 5px #f4e542;
+  box-sizing: border-box;
+  margin-right: 950px;
+  text-align: center;
+}
+.obs{
+  font-size: 13px;
+}
+#titulo_p2{
+  font-family: "Bungee Shade";
+  font-size: 50px;
+
+}
+#titulo_p1{
+  font-family: "Bungee";
+  color: #f4e542;
+  font-size: 30px;
+}
+#subtitulo_p{
+    font-size: 20px;
+    font-family: "Oxygen";
+    color: #f4e542;
+    position: relative;
+    bottom: 25px;
+}
+#titulo_p1, #titulo_p2{
+  display: inline;
+}
+#img_header{
+  height: 120px;
+  float: left;
+  position: absolute;
+  top: 30px;
+  right: -5px;
+}

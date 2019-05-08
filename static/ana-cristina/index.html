@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+       <title>Colinhas</title>
+       <link rel="stylesheet" href="estilos.css">
+       <link rel="icon" href="imgs/html.png">
+     </head>
+     <body>
+       <header>
+         <h1>Bem-vindo ao universo HTML jovem Padawan</h1>
+         <p>Hoje você vai se aventurar com um pouco de colinhas<br>
+           sobre HTML para sua prova de Web!!<br>
+         </p>
+       </header>
+
+      <section>
+       <h1>Anatomia de uma Tag</h1>
+        <article>
+          <code class="estilizar">&lt;p&gt;Olá mundo&lt;/p&gt;</code>
+          <p><strong>Esta é uma tag HTML!!</strong> Neste exemplo, a tag <span class="bordas">&lt;p&gt;</span> é tag
+            de abertura, <span class="bordas">&lt;/p&gt;</span> a tag de fechamento, "Olá mundo" o conteúdo da tag
+            e todos eles compondo um elemento.
+          </p>
+        </article>
+        <article>
+          <h2>Tags podem ter <em>atributos</em></h2>
+          <code class="estilizar">&lt;img src"ninjas-unicórnios.png"&gt;</code>
+          <p>Em <span class="bordas">&lt;img,</span> o atributo src"..." aponta para a URL do arquivo</p>
+          <p class="atenção"> Não deve haver espaço entre um nome e seu valor.</p>
+        </article>
+      </section>
+
+      <section>
+       <h1>Estrutura de um arquivo HTML</h1>
+        <article>
+          <h2>A tag &lt;HTML&gt;</h2>
+          <p>Um dos três elementos principais que compõem a estrutura de um
+            arquivo HTML é a tag <span class="bordas">&lt;HTML&gt;</span>. Nela estão envolvidas todas as tags exceto
+            a tag especial <span class="bordas">&lt;!DOCTYPE html&gt;</span>
+          </p>
+          <p>Dentro dela, deve existir as seguintes tags nesta ordem:</p>
+          <ul>
+            <li><span class="bordas">&lt;head&gt;...&lt;/head&gt;</span></li>
+          </ul>
+          <ul>
+            <li><span class="bordas">&lt;body&gt;...&lt;/body&gt;</span></li>
+          </ul>
+          <h2>A tag &lt;head&gt;</h2>
+          <p>Do inglês: cabeça</p>
+          <p>Contém meta-informação sobre este arquivo html, por exemplo:</p>
+          <ul>
+           <li>Título da página no topo do navegador (obrigatório)</li>
+          </ul>
+          <ul>
+           <li>Codificação <em>(enconding)</em> da página</li>
+          </ul>
+          <ul>
+            <li>Ícone</li>
+          </ul>
+          <ul>
+            <li>Inclusão de arquivos(.css, .js)</li>
+          </ul>
+          <img class="diminui" src="imgs/estrutura-basica.png">
+        </article>
+        <article>
+          <h2>A tag &lt;body&gt;</h2>
+          <p>Do inglês: cabeça</p>
+          <p>Contém todo o conteúdo da página: tags de</p>
+          <ul>
+            <li>parágrafos <span class="bordas">&lt;p&gt;...&lt;/p&gt;</span></li>
+          </ul>
+          <ul>
+            <li>títulos e subtítulos <span class="bordas">&lt;h1&gt;...&lt;/h1&gt;</span></li>
+          </ul>
+          <ul>
+              <li>imagens <span class="bordas">&lt;img&gt;</span></li>
+            </ul>
+          <img class="diminui" src="imgs/body.jpg">
+        </article>
+    </section>
+
+    <section>
+     <h1>Tags Universais</h1>
+      <article>
+       <h2>Seletor id</h2>
+       <p>É possível definir um nome que identifique um único elemento da página</p>
+       <p>Todo elemento html pode ter um atributo id. Exemplos:</p>
+       <code class="estilizar">&lt;img src"..." id="capa-mongol"&gt;</code>
+       <code class="estilizar">&lt;h1 id="Título-principal"&gt;Morango aos pedaços&lt;/h1&gt;</code>
+       <p class="atenção"> Não pode haver atributos id com nomes iguais. Para cada atributo
+        id deve se ter um nome diferente.</p>
+       <p>Podemos usar um para id estilizar frases ou palavras. Exemplo:</p>
+       <img src="imgs/imagem-do-id.png">
+     </article>
+     <article>
+       <h2>Seletor class</h2>
+       <p>A class é parecida com o id, porém ela é usada para estilizar dois ou mais elementos da mesma forma. Exemplos:</p>
+       <code class="estilizar">&lt;h1 class"blue"&gt;Sabre de luz&lt;/h1&gt;</code>
+       <code class="estilizar">&lt;h2 class"blue"&gt;Estrela da Morte&lt;/h1&gt;</code>
+       <p>Neste exemplo, como o <strong>h1</strong> e o <strong>h2</strong> possuem a mesma <em>class</em>,
+         eles serão estilizados da mesma maneira. </p>
+       <img class="diminuir" src="imgs/seletor-class.png">
+     </article>
+    </section>
+
+      <aside>
+          Hey jovem Padawan!! Parabéns por ter chegado até aqui, continue a explorar este universo e logo
+          você se tornará um Jedi da Computação!
+      </aside>
+
+    <section>
+     <h1>Como colocar um Ícone ?</h1>
+      <article>
+        <p>Certamente, uma das maiores dúvidas da nossa galáxia mas com uma solução mais simples do que se irritar com Jar
+        Jar Binks!</p>
+        <p>Para adcionar um ícone(favicon) à sua página HTML basta você utilizar a tag <span class="bordas">&lt;link&gt;</span>.</p>
+        <code class="estilizar">&lt;link rel="icon" href="imgs/url-da-imagem"&gt;</code>
+        <p class="atenção"> Como o ícone não faz parte das informações que serão exibidas na página, ele deve ficar dentro da tag
+        <span class="bordas">&lt;head&gt;</span> e geralmente abaixo da tag <span class="bordas">&lt;title&gt;</span>.
+        </p>
+      </article>
+    </section>
+
+    <section>
+     <h1>Principais tags de contúdo e seus atributos</h1>
+      <article>
+        <h2>Tag de Paragráfo ( &lt;p&gt; ) </h2>
+        <p><strong>Quebras de linha</strong> são feitas automaticamente.</p>
+        <img class="star "src="imgs/star-wars.png">
+        <img class="star" src="imgs/wars-star.png">
+      </article>
+
+      <article>
+        <h2>Tags de Títulos e Subtítulos ( h1...h6 )</em></h2>
+        <p>Podemos ter até seis níveis de títulos! Eles vão de <strong>h1</strong> a <strong>h6</strong>,
+        sendo <strong>h1</strong> o título de primeiro nível, <strong>h2</strong> o subtítulo de segundo nível
+        e assim por diante.</p>
+        <img class="diminuir" src="imgs/titulos.png">
+        <p class="atenção"> Temos seis níveis de títulos <strong>(h1...h6)</strong> mas podemos usar as tags quantas vezes
+         quisermos.</p>
+      </article>
+      <article>
+        <h2>Tag de Imagem ( &lt;img&gt; )</h2>
+        <p>Para exibir imagens:</p>
+        <code class="estilizar">&lt;img src"ninjas-unicórnios.png"&gt;</code>
+        <p>O atributo <span class="bordas">src"..."</span> (abreviação de <em>source</em>) é
+          usado para apontar o endereço URL da imagem.</p>
+        <p>Uma URL pode ser interna ou externa.</p>
+      </article>
+      <article>
+        <h3>URL interna</h3>
+        <p>A URL interna aponta para algo da própia página/site e pode ser relativa ou absoluta.</p>
+          <ul>
+            <li>janelas-quebradas.html <span class="urls">absoluto</span></li>
+          </ul>
+          <ul>
+            <li>imagens/patinhos.jpg <span class="urls">absoluto</span></li>
+          </ul>
+          <ul>
+            <li>.../imgs/logo.png <span class="urls">absoluto</span></li>
+          </ul>
+          <ul>
+            <li>/arquivos/sabredeluz.zip <span class="urls">relativo</span></li>
+          </ul>
+      </article>
+      <article>
+        <h3>URL externa</h3>
+        <p>Aponta para algo ( imagem, etc ) de outro site. Geralmente começa com:
+          <span class="bordas">&lt;http://</span> ou <span class="bordas">&lt;https://</span>.</p>
+          <div class="links">
+            <ul>
+              <li><a href="http://google.com">Google</a></li>
+            </ul>
+            <ul>
+              <li><a href="https://ava.cefetmg.br">Moodle cefet</a></li>
+            </ul>
+            <ul>
+              <li><a href="https://pt.wikipedia.org/wiki/Star_Wars">Wiki Star Wars</a></li>
+            </ul>
+          </div>
+      </article>
+      <article>
+        <h4>Exemplo 1: Imagem e arquivo HTML na mesma pasta</h4>
+        <p>Arquivo HTML está em:</p>
+        <p><span class="bordas">/brigadeiro/monstro/maravilhoso.html</span></p>
+        <p>A imagem está em:</p>
+        <p><span class="bordas">/brigadeiro/monstro/monster-doces.jpg</span></p>
+        <p>Podemos utilizar seu endereço <span class="absol">absoluto</span>. Ficaria assim:</p>
+        <code class="estilizar">&lt;img src"/brigaderio/monstro/monster-doces.jpg"&gt;</code>
+        <p>Ou seu endereço <span class="relat">relativo</span>. Ficaria assim:</p>
+        <code class="estilizar">&lt;img src"monster-doces.jpg"&gt;</code>
+      </article>
+      <article>
+        <h4>Exemplo 2: Imagem uma pasta adentro</h4>
+        <p>Utilizando o endereço <span class="absol">absoluto</span> ficaria assim:</p>
+        <code class="estilizar">&lt;img src"/brigadeiro/monstro/img/monster-doces.jpg"&gt;</code>
+        <p>Endereço <span class="relat">relativo</span>:</p>
+        <code class="estilizar">&lt;img src"img/monster-doces.jpg"&gt;</code>
+      </article>
+      <article>
+        <h4>Exemplo 3: Imagem uma pasta acima</h4>
+        <p>Endereço <span class="absol">absoluto</span>:</p>
+        <code class="estilizar">&lt;img src"/brigadeiro/monster-doces.jpg"&gt;</code>
+        <p>Endereço <span class="relat">relativo</span>:</p>
+        <code class="estilizar">&lt;img src"../monster-doces.jpg"&gt;</code>
+      </article>
+      <article>
+        <h4>Exemplo 4: Imagem duas pastas acima</h4>
+        <p>Endereço <span class="absol">absoluto</span>:</p>
+        <code class="estilizar">&lt;img src"/monster-doces.jpg"&gt;</code>
+        <p>Endereço <span class="relat">relativo</span>:</p>
+        <code class="estilizar">&lt;img src"../../monster-doces.jpg"&gt;</code>
+      </article>
+      <article>
+        <h2>Tag de Hyperlink</h2>
+        <h3>Link externo</h3>
+        <p>para fora da página:</p>
+        <code class="estilizar">&lt;a href"http://wwww.google.com"&gt;Texto do link externo&lt;/a&gt;</code>
+        <h3>Link interno</h3>
+        <p>para algo hospedado no própio computador:</p>
+        <code class="estilizar">&lt;a href"downloads/exemplo.zip"&gt;Texto do link ixterno&lt;/a&gt;</code>
+      </article>
+      <h1>Como incluir css ?</h1>
+       <article>
+        <p>Ei jovem Padawan, não se desespere! Incluir o código css é tão fácil que até o desprezível Jabba the Hutt conseguiria!</p>
+        <p>Para incluir o código css, basta você digitar link e apertar tab, depois coloque o nome de seu arquivo css.
+          Ficaria assim:</p>
+        <code class="estilizar">&lt;link rel="stylesheet" href="estilos.css"&gt;</code>
+      </article>
+    </section>
+
+    <aside>
+      Parabéns Jovem Padawan!!! Você conseguiu explorar uma parte do universo HTML e como prêmio, fique com
+      umas dicas para enfretar sua prova de Web e depois se divirta sabendo como surgiu este universo!
+    </aside>
+
+    <footer>
+      <h1>Dicas para enfretar sua prova de Web!!</h1>
+      <p>Durma umas 10 horas seguidas antes de ir pra aula <br>
+         Comece a estudar 3 dias antes <br>
+         Coma chocolate antes da prova <br>
+         Beba bastante água <br>
+         Use e desfrute da sua colinha <br>
+         Que a força esteja com você Jovem Padawan! <br>
+      </p>
+
+      <h1 id="historia">Universo HTML</h1>
+      <p>Clique no link abaixo e se divirta explorando este universo!</p>
+      <a id="html" href="http://www.frontendbrasil.com.br/artigos/a-historia-do-html/">História do HTML</a>
+    </footer>
+  </body>
+</html>

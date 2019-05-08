@@ -1,0 +1,28 @@
+body{
+  background-color: GhostWhite;
+  text-align: justify;
+  font-style: normal;
+  font-size: 14px;
+  font-family: 'Cairo', sans-serif;
+  font-weight: normal;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2{
+  text-align: center;
+  font-family: 'Lalezar', cursive;
+  font-size: 36px;
+}
+p{
+  text-align: center;
+  font-size: 18px;
+}
+ol{
+  font-size: 18px;
+}
+h1{
+  font-size: 48px;
+}
