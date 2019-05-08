@@ -132,7 +132,7 @@ strong {
 
 .colinha {
   margin: 10px;
-  width: 300px;
+  width: 400px;
   --raio-borda: 6px;
   position: relative;
 }
@@ -282,9 +282,27 @@ strong {
   left: 0.5em;
   right: 0.5em;
 }
+
 .campo label .material-icons {
   font-size: 1em;
   cursor: help;
+}
+
+.visualizando-minhas-revisoes {
+  display: none;
+}
+
+.minha-colinha .visualizando-minhas-revisoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.minha-colinha .avaliando-uma-colinha {
+  display: none;
+}
+
+.apexcharts-title-text {
+  text-align: center;
 }
 
 .thumb,

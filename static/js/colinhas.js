@@ -1,4 +1,5 @@
 import {encodeFormParams} from './utils.js';
+import graficos from './graficos.js';
 
 const backend = '/api';
 
@@ -22,7 +23,7 @@ const defineAvaliacaoDeColinha = (colinhaEl, id, completude, beleza, favorita) =
   favoritaEl.checked = favorita == true;
 
   colinhaEl.dataset.idAvaliacao = id;
-  colinhaEl.classList.toggle('minha-favorita', favorita == true)
+  colinhaEl.classList.toggle('minha-favorita', favorita == true);
 }
 
 const ativaEventosColinhas = () => {
@@ -54,11 +55,19 @@ colinhas.baixar = function({template, colinhasHtmlEl, colinhasCssEl}) {
   return fetch(`${backend}/colinha`)
     .then(r => r.json())
     .then(colinhas => {
+      // cria campo da colinha com as avaliações que foram pra ela
+      colinhas = colinhas.map(colinha => {
+        colinha.completenessValues = colinha.reviews.map(r => r.completeness);
+        colinha.beautyValues = colinha.reviews.map(r => r.beauty);
+        return colinha;
+      });
+
       // apenas as de HTML
       const html = colinhas.filter(c => c.language === 'html');
       // apenas as de CSS
       const css = colinhas.filter(c => c.language === 'css');
 
+      // preenche a página com as colinhas de HTML, depois de CSS
       colinhasHtmlEl.innerHTML = html.reduce((prev, curr) => prev + mustache(template, curr), '');
       colinhasCssEl.innerHTML = css.reduce((prev, curr) => prev + mustache(template, curr), '');
 
@@ -86,7 +95,18 @@ colinhas.ativaBotoesDeAvaliacao = function(oldUser, newUser) {
 
 // 2. ressalta a própria colinha do usuário
 colinhas.ressaltaPropriaColinha = function(oldUser, newUser) {
-  this.colinhasEls.forEach(el => el.classList.toggle('minha-colinha', newUser && el.id.endsWith(newUser._id)))
+  this.colinhasEls.forEach(el => el.classList.toggle('minha-colinha', newUser && el.id.endsWith(newUser._id)));
+
+  // mostra os gráficos das minhas colinhas
+  const minhasColinhas = this.colinhasEls.filter(el => newUser && el.id.endsWith(newUser._id));
+  minhasColinhas.forEach(colinhaEl => {
+    const graficoCompletudeEl = colinhaEl.querySelector('.grafico-completude');
+    const graficoBelezaEl = colinhaEl.querySelector('.grafico-beleza');
+    const valoresCompletude = JSON.parse(colinhaEl.dataset.valoresCompletude || '[]');
+    const valoresBeleza = JSON.parse(colinhaEl.dataset.valoresBeleza || '[]');
+
+    graficos.create(graficoCompletudeEl, graficoBelezaEl, valoresCompletude, valoresBeleza);
+  });
 };
 
 // 3. baixa e atualiza as avaliações

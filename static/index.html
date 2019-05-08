@@ -74,48 +74,58 @@
 
     <!-- início de um article.colinha 100% bacana -->
     <script type="text/template" id="template-colinha">
-      <article class="colinha cartao-container a-avaliar" id="{{language}}-{{author._id}}" data-id-colinha="{{_id}}" data-id-avaliacao="" data-id-autor="{{author._id}}">
+      <article class="colinha cartao-container a-avaliar" id="{{language}}-{{author._id}}" data-id-colinha="{{_id}}" data-id-avaliacao="" data-id-autor="{{author._id}}" data-valores-completude="[{{completenessValues}}]" data-valores-beleza="[{{beautyValues}}]">
         <div class="cartao">
           <div class="tras">
             <header class="cabecalho-tras">
               <h3 class="autor">{{author.username}}</h3>
               <a href="{{folderPath}}/index.html" target="_blank" class="visitar-a-pagina deep-purple-text text-lighten-2">Visitar a página</a>
             </header>
-            <p>Avalie esta colinha:</p>
-            <form action="#" class="form-avaliacao">
-              <div class="lado-a-lado">
-                <div class="campo">
-                  <label for="completude-{{author._id}}">
-                    Completude
-                    <i class="material-icons tooltipped" data-position="top" data-tooltip="A colinha incluiu tudo o que é necessário<br>sobre o assunto, e de maneira sucinta?">help_outline</i>
-                  </label>
-                  <div class="range-field">
-                    <input type="range" class="completude" id="completude-{{author._id}}" name="completude" min="0" max="10">
+            <div class="avaliando-uma-colinha">
+              <p>Avalie esta colinha:</p>
+              <form action="#" class="form-avaliacao">
+                <div class="lado-a-lado">
+                  <div class="campo">
+                    <label for="completude-{{author._id}}">
+                      Completude
+                      <i class="material-icons tooltipped" data-position="top" data-tooltip="A colinha incluiu tudo o que é necessário<br>sobre o assunto, e de maneira sucinta?">help_outline</i>
+                    </label>
+                    <div class="range-field">
+                      <input type="range" class="completude" id="completude-{{author._id}}" name="completude" min="0" max="10">
+                    </div>
+                  </div>
+                  <div class="campo">
+                    <label class="label" for="beleza-{{author._id}}">
+                      Layout e design
+                      <i class="material-icons tooltipped" data-position="top" data-tooltip="A página ficou lindinha,<br>como se o criador tivesse gastado<br>tempo estilizando legal?">help_outline</i>
+                    </label>
+                    <div class="range-field">
+                      <input type="range" class="beleza" id="beleza-{{author._id}}" name="beleza" min="0" max="10">
+                    </div>
                   </div>
                 </div>
                 <div class="campo">
-                  <label class="label" for="beleza-{{author._id}}">
-                    Layout e design
-                    <i class="material-icons tooltipped" data-position="top" data-tooltip="A página ficou lindinha,<br>como se o criador tivesse gastado<br>tempo estilizando legal?">help_outline</i>
+                  <label>
+                    <input type="checkbox" class="favorita" id="favorita-{{author._id}}" name="favorita">
+                    <span>❤️ esta é minha preferida de todas</span>
                   </label>
-                  <div class="range-field">
-                    <input type="range" class="beleza" id="beleza-{{author._id}}" name="beleza" min="0" max="10">
-                  </div>
                 </div>
-              </div>
-              <div class="campo">
-                <label>
-                  <input type="checkbox" class="favorita" id="favorita-{{author._id}}" name="favorita">
-                  <span>❤️ esta é minha preferida de todas</span>
-                </label>
-              </div>
+                <div class="lado-a-lado">
+                  <a href="#" class="girar deep-purple-text text-lighten-2">Voltar</a>
+                  <button type="button" disabled class="avaliar waves-effect waves-light btn-small deep-purple">
+                    <i class="material-icons left tooltipped" data-position="top" data-tooltip="Faça login para avaliar">help_outline</i>Avaliar
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="visualizando-minhas-revisoes">
+              <p>Revisões sobre minha colinha: {{totalReviews}}</p>
               <div class="lado-a-lado">
-                <a href="#" class="girar deep-purple-text text-lighten-2">Voltar</a>
-                <button type="button" disabled class="avaliar waves-effect waves-light btn-small deep-purple">
-                  <i class="material-icons left tooltipped" data-position="top" data-tooltip="Faça login para avaliar">help_outline</i>Avaliar
-                </button>
+                <div class="grafico-completude"></div>
+                <div class="grafico-beleza"></div>
               </div>
-            </form>
+              <a href="#" class="girar deep-purple-text text-lighten-2">Voltar</a>
+            </div>
           </div>
           <div class="frente">
             <img src="{{folderPath}}/thumb.png" class="thumb" alt="Colinha de Alice">
@@ -136,6 +146,7 @@
     <!-- fim de um article.colinha 100% bacana -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/apexcharts.js"></script>
     <script src="js/mustache.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8" type="module"></script>
   </body>
