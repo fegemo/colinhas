@@ -2,7 +2,7 @@ import { range } from './utils.js';
 
 const graficos = {};
 
-graficos.create = function(completudeEl, belezaEl, completudes, belezas) {
+graficos.create = function(completudeEl, belezaEl, completudes, belezas, opts = {}) {
   const options = {
     chart: {
       type: 'bar',
@@ -47,10 +47,6 @@ graficos.create = function(completudeEl, belezaEl, completudes, belezas) {
         speed: 350
       }
     },
-    // fill: {
-    //   colors: ['#ff0000'],
-    //   opacity: 1
-    // },
     stroke: {
       show: false,
       width: 1,
@@ -90,10 +86,9 @@ graficos.create = function(completudeEl, belezaEl, completudes, belezas) {
           fontSize: '10px'
         }
       }
-    });
-    console.log(coptions)
-    const chart = new ApexCharts(el, coptions);
+    }, opts);
 
+    const chart = new ApexCharts(el, coptions);
     chart.render();
   });
 };

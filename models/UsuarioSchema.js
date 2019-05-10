@@ -4,13 +4,11 @@ const schema = mongoose.Schema;
 
 const model = new schema({
   username: String,
-  password: String,
+  password: { type: String, select: false },
   name: String
 });
 
 module.exports = mongoose.model("Usuario", model, "usuario");
-
-
 
 
 //

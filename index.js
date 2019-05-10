@@ -15,6 +15,7 @@ app.use(cors());
 app.use("/api/login", require("./routes/login.js"));
 app.use("/api/colinha", require("./routes/colinha.js"));
 app.use("/api/avaliacao", require("./routes/avaliacao.js"));
+app.use("/api/relatorios", require("./routes/relatorios.js"));
 
 
 app.use(express.static('static'));
